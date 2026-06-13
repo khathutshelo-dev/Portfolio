@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+}
+
+.contact{
+    min-height:100vh;
+    padding:80px 50px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h1{
+    font-size:50px;
+}
+
+.title p{
+    color:#9ca3af;
+    margin-top:10px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:40px;
+}
+
+.left,
+.right{
+    background:#0d1224;
+
+    border:1px solid rgba(138,92,246,.3);
+
+    border-radius:20px;
+
+    padding:35px;
+}
+
+.left h2{
+    margin-bottom:20px;
+}
+
+.left p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.info{
+    display:flex;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.info i{
+    width:55px;
+    height:55px;
+
+    background:#7c3aed;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-right:15px;
+}
+
+.info span{
+    color:#cbd5e1;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    background:#111827;
+
+    border:1px solid #374151;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    color:white;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#8b5cf6;
+}
+
+button{
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+    90deg,
+    #7c3aed,
+    #9333ea
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+}
+
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:30px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#7c5cff;
+
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,8,22,.6);
+backdrop-filter:blur(20px);
+z-index:1000;
+
+}
+
+.social-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+.social-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+/* Hover effects */
+.social:hover {
+  transform: translateY(-5px);
+}
+
+/* Brand colors */
+.github:hover {
+  background: #333;
+}
+
+.linkedin:hover {
+  background: #0077b5;
+}
