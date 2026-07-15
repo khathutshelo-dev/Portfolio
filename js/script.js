@@ -218,3 +218,10 @@ if (heroImg) {
         heroImg.classList.toggle("float");
     }, 2000);
 }
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
