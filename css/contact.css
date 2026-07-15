@@ -132,12 +132,51 @@ button{
 button:hover{
     opacity:.9;
 }
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(5,8,22,.6);
+    backdrop-filter:blur(20px);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#7c5cff;
+}
+
 .menu-toggle{
     display:none;
     font-size:30px;
     color:#fff;
     cursor:pointer;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
 @media (max-width:768px){
 
 header{
@@ -202,88 +241,3 @@ nav ul{
 
 }
 
-
-nav ul{
-
-display:flex;
-list-style:none;
-gap:30px;
-
-}
-
-nav ul li a{
-
-text-decoration:none;
-color:white;
-transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-color:#7c5cff;
-
-}
-
-header{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:25px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(5,8,22,.6);
-backdrop-filter:blur(20px);
-z-index:1000;
-
-}
-
-.social-section {
-  text-align: center;
-  padding: 60px 20px;
-  background: #0f172a;
-  color: white;
-}
-
-.social-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-
-/* Hover effects */
-.social:hover {
-  transform: translateY(-5px);
-}
-
-/* Brand colors */
-.github:hover {
-  background: #333;
-}
-
-.linkedin:hover {
-  background: #0077b5;
-}
