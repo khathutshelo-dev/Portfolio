@@ -596,9 +596,10 @@ nav ul{
         transform: translateY(-10vh);
     }
 }
+
 .menu-toggle{
     display:none;
     font-size:30px;
+    color:#fff;
     cursor:pointer;
-    color:white;
 }
