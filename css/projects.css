@@ -178,3 +178,73 @@ backdrop-filter:blur(20px);
 z-index:1000;
 
 }
+
+/* ==============================
+   Mobile Responsive Navbar
+============================== */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+header{
+    padding:20px;
+}
+
+.menu-toggle{
+    display:block;
+    z-index:1001;
+}
+
+nav{
+    position:fixed;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:#050816;
+    transition:.4s ease;
+    z-index:1000;
+}
+
+nav.active{
+    left:0;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:30px 0;
+}
+
+.projects{
+    padding:140px 20px 60px;
+}
+
+.page-header h1{
+    font-size:2.2rem;
+}
+
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+.project-card img{
+    height:200px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons a{
+    text-align:center;
+}
+
+}
