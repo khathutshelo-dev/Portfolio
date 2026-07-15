@@ -169,13 +169,6 @@ nav ul li a:hover{
     color:#fff;
     cursor:pointer;
 }
-.menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#fff;
-    cursor:pointer;
-}
-
 
 @media (max-width:768px){
 
