@@ -107,23 +107,80 @@ color:#bdbdbd;
 color:#c8c8c8;
 line-height:1.8;
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+@media (max-width:768px){
 
-@media(max-width:768px){
-
-.experience{
-padding:80px 20px;
+header{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.timeline-item{
-padding-left:75px;
+.menu-toggle{
+    display:block;
+    z-index:1001;
 }
 
-.page-header h1{
-font-size:2.3rem;
+.hire-btn{
+    display:none;
 }
 
-.timeline-content h3{
-font-size:20px;
+nav{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#050816;
+    display:none;
+    padding:20px 0;
+}
+
+nav.active{
+    display:block;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.hero{
+    padding-top:150px;
+    flex-direction:column;
+    text-align:center;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left h1{
+    font-size:50px;
+}
+
+.left h2{
+    font-size:28px;
+}
+
+.right img{
+    width:300px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.buttons{
+    flex-direction:column;
 }
 
 }
