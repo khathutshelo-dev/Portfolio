@@ -478,45 +478,25 @@ box-shadow:0 0 35px rgba(124,92,255,.6);
 /*==============================
 Responsive
 ===============================*/
-
-@media(max-width:1200px){
-
-.hero{
-
-flex-direction:column;
-text-align:center;
-
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
 }
 
-.left{
-
-width:100%;
-
-}
-
-.right{
-
-width:100%;
-margin-top:80px;
-
-}
-
-.cards{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:700px){
+@media (max-width:700px){
 
 header{
     padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .menu-toggle{
     display:block;
+    z-index:1001;
 }
 
 .hire-btn{
@@ -530,6 +510,7 @@ nav{
     width:100%;
     background:#050816;
     display:none;
+    padding:20px 0;
 }
 
 nav.active{
@@ -537,14 +518,21 @@ nav.active{
 }
 
 nav ul{
+    display:flex;
     flex-direction:column;
-    text-align:center;
+    align-items:center;
     gap:20px;
-    padding:20px 0;
 }
 
 .hero{
     padding-top:150px;
+    flex-direction:column;
+    text-align:center;
+}
+
+.left,
+.right{
+    width:100%;
 }
 
 .left h1{
@@ -552,22 +540,24 @@ nav ul{
 }
 
 .left h2{
-    font-size:25px;
-}
-
-.buttons{
-    flex-direction:column;
-}
-
-.cards{
-    grid-template-columns:1fr;
+    font-size:28px;
 }
 
 .right img{
     width:300px;
 }
 
+.cards{
+    grid-template-columns:1fr;
 }
+
+.buttons{
+    flex-direction:column;
+}
+
+}
+
+
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -597,9 +587,3 @@ nav ul{
     }
 }
 
-.menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#fff;
-    cursor:pointer;
-}
