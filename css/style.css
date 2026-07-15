@@ -509,28 +509,42 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-@media (max-width:700px){
+@media(max-width:700px){
 
 header{
-    padding:15px;
-    flex-direction:column;
-    gap:15px;
+    padding:20px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.hire-btn{
+    display:none;
 }
 
 nav{
-    display:block;
+    position:absolute;
+    top:80px;
+    left:0;
     width:100%;
+    background:#050816;
+    display:none;
+}
+
+nav.active{
+    display:block;
 }
 
 nav ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+    padding:20px 0;
 }
 
 .hero{
-    padding-top:200px;
+    padding-top:150px;
 }
 
 .left h1{
@@ -552,6 +566,7 @@ nav ul{
 .right img{
     width:300px;
 }
+
 }
 .reveal {
     opacity: 0;
@@ -580,4 +595,10 @@ nav ul{
     to {
         transform: translateY(-10vh);
     }
+}
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
 }
