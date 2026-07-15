@@ -207,6 +207,12 @@ z-index:1000;
     color:#b9b9b9;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
 @media (max-width:991px){
 
     .about-container{
@@ -289,11 +295,4 @@ nav ul{
     text-align:center;
 }
 
-}
-
-menu-toggle{
-    display:none;
-    font-size:30px;
-    color:#fff;
-    cursor:pointer;
 }
